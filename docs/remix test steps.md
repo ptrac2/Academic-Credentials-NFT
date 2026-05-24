@@ -87,6 +87,7 @@ To confirm it worked, call:
 isIssuer(Account2Address)
 Expected Result
 true
+
 **Step 4 — Mint a Credential to a Graduate**
 
 Copy:
@@ -131,6 +132,7 @@ Optional check:
 ownerOf(0)
 Expected Result
 Account3Address
+
 **Step 5 — Read the Credential Record**
 
 Call:
