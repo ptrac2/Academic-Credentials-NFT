@@ -35,6 +35,7 @@ IssuerRegistry
 Deploy it from:
 
 Account 1
+
 Explanation
 
 This contract represents the trusted issuer registry. In the real system, this would be controlled by an accreditation body such as a government or education authority.
