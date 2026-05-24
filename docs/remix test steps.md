@@ -44,7 +44,7 @@ The deployer automatically becomes the contract owner through OpenZeppelin’s O
 
 After deployment, copy the deployed IssuerRegistry contract address.
 
-Step 2 — Deploy the Credential NFT Contract
+**Step 2 — Deploy the Credential NFT Contract**
 
 Select:
 
@@ -65,7 +65,7 @@ issuerRegistry.isIssuer(msg.sender)
 
 This demonstrates direct smart contract interaction.
 
-Step 3 — Approve the University Issuer
+**Step 3 — Approve the University Issuer**
 
 Stay on:
 
@@ -87,7 +87,7 @@ To confirm it worked, call:
 isIssuer(Account2Address)
 Expected Result
 true
-Step 4 — Mint a Credential to a Graduate
+**Step 4 — Mint a Credential to a Graduate**
 
 Copy:
 
@@ -131,7 +131,7 @@ Optional check:
 ownerOf(0)
 Expected Result
 Account3Address
-Step 5 — Read the Credential Record
+**Step 5 — Read the Credential Record**
 
 Call:
 
@@ -150,7 +150,7 @@ and whether the credential is currently valid.
 
 Only the hash is stored on-chain — not the original PDF.
 
-Step 6 — Verify the Credential
+**Step 6 — Verify the Credential**
 
 Call:
 
@@ -176,7 +176,7 @@ Explanation
 
 If the PDF has been modified or forged, the hash changes completely, so verification fails.
 
-Step 7 — Revoke the Credential
+**Step 7 — Revoke the Credential**
 
 Stay on:
 
@@ -209,7 +209,7 @@ The credential history still exists on-chain, but the credential is no longer co
 
 This preserves auditability while allowing universities to revoke credentials if required.
 
-Step 8 — Demonstrate Soulbound Behaviour
+**Step 8 — Demonstrate Soulbound Behaviour**
 
 Switch to:
 
@@ -228,7 +228,7 @@ Academic credentials should remain tied to the original graduate and should not 
 
 The contract overrides ERC-721 transfer behaviour to create a soulbound credential NFT.
 
-Step 9 — Demonstrate Access Control
+**Step 9 — Demonstrate Access Control**
 
 Switch to:
 
