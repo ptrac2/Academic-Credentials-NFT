@@ -34,7 +34,7 @@ IssuerRegistry
 
 Deploy it from:
 
-Account 1
+Accreditation Body
 
 Explanation
 
@@ -54,7 +54,7 @@ In the constructor input, paste the deployed IssuerRegistry address.
 
 Deploy it from:
 
-Account 1
+Accreditation Body
 Explanation
 
 The credential contract needs the registry address so it can check whether the caller is an approved university before allowing credentials to be minted, updated, or revoked.
@@ -69,7 +69,7 @@ This demonstrates direct smart contract interaction.
 
 Stay on:
 
-Account 1
+Accreditation Body
 
 Open the deployed IssuerRegistry contract.
 
@@ -96,7 +96,7 @@ Account3Address
 
 Switch to:
 
-Account 2
+University
 
 (approved university)
 
@@ -110,9 +110,9 @@ mintCredential(
 )
 Explanation
 
-Account 2 is acting as the approved university.
+University is acting as the approved university.
 
-Account 3 is the graduate receiving the credential NFT.
+Graduate is the graduate receiving the credential NFT.
 
 The hexadecimal value represents the keccak256 hash of the original academic PDF.
 
@@ -125,7 +125,7 @@ to confirm the university is approved before allowing minting.
 Expected Result
 Transaction succeeds
 Token ID 0 is created
-Account 3 becomes the owner of the NFT
+Graduate becomes the owner of the NFT
 
 Optional check:
 
@@ -140,7 +140,7 @@ Call:
 getCredential(0)
 Expected Result
 documentHash matches stored hash
-issuer matches Account 2
+issuer matches University
 valid = true
 Explanation
 
@@ -182,7 +182,7 @@ If the PDF has been modified or forged, the hash changes completely, so verifica
 
 Stay on:
 
-Account 2
+University
 
 Call:
 
@@ -215,7 +215,7 @@ This preserves auditability while allowing universities to revoke credentials if
 
 Switch to:
 
-Account 3
+Graduate
 
 (graduate)
 
@@ -234,7 +234,7 @@ The contract overrides ERC-721 transfer behaviour to create a soulbound credenti
 
 Switch to:
 
-Account 4
+Employer
 
 (unapproved address)
 
